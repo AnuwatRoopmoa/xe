@@ -63,5 +63,5 @@ server_on()
 if __name__ == "__main__":
     async def start_bot():
         await loadcogs()
-        await React.start('TOKEN', reconnect=True)
+        await React.start("TOKEN", reconnect=True)
     run(start_bot())
