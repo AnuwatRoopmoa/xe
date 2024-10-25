@@ -59,11 +59,9 @@ async def on_message(message):
         return
 
     await React.process_commands(message)
-
+server_on()
 if __name__ == "__main__":
     async def start_bot():
         await loadcogs()
         await React.start(config.Bot_token, reconnect=True)
-
-server_on()
     run(start_bot())
